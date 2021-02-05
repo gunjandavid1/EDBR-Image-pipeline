@@ -1,0 +1,14 @@
+[edb]
+name=EnterpriseDB RPMs $releasever - $basearch
+baseurl=https://qmg:EdB123@yum.enterprisedb.com/edb/redhat/rhel-$releasever-$basearch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/ENTERPRISEDB-GPG-KEY
+
+[edb-testing]
+name=EnterpriseDB Testing - Not For Production $releasever - $basearch
+baseurl=https://qmg:EdB123@yum.enterprisedb.com/edb-testing/redhat/rhel-$releasever-$basearch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/ENTERPRISEDB-GPG-KEY
+
