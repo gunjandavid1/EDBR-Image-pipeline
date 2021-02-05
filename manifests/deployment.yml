@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: edbrimagedeployaks 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: edbrimagedeployaks
+  template:
+    metadata:
+      labels:
+        app: edbrimagedeployaks 
+    spec:
+      containers:
+        - name: edbrimagedeployaks 
+          image: aksdevopsacr3.azurecr.io/edbrimagedeployaks
+          ports:
+          - containerPort: 80
